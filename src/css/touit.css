@@ -1,0 +1,366 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+}
+
+p, td, th, tr{
+    color: black;
+    font-size: 1.1em;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+#title{
+    margin: 0;
+    font-size: 60px;
+    color: #2667ff;
+    font-weight: 900;
+    text-shadow: 0 8px 0 darkblue;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: -10%;
+    padding-top: 5%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0,0.1);
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgb(220,220,220);
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.head :nth-child(1) { order: 1; }
+.head :nth-child(2) { order: 3; }
+.head :nth-child(3) { order: 2; }
+
+.menu {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a{
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.affiche{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+body {
+    margin: 0;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+    background-color: lightblue;
+}
+
+/** TOUITE **/
+
+.touite{
+    margin: 2% auto ;
+    background-color: white;
+    width: 35%;
+    height: fit-content;
+    border-bottom: 1px solid rgba(220,220,220);
+    box-shadow: 0px 15px 15px -15px rgba(0, 0, 0,0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    border-radius: 12px;
+    background-color: rgba(220,220,220,0.3);
+    margin: 2%;
+    height: 50%;
+}
+
+.message p {
+    padding: 2%;
+    margin: 0;
+}
+
+.topTouite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.bottomTouite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.bottomTouite :nth-child(1) { order: 2; padding-top: 2%}
+.bottomTouite :nth-child(2) { order: 1; }
+.bottomTouite :nth-child(3) { order: 3; padding-top: 2%}
+
+.creator{
+    display: flex;
+    flex-direction: row;
+}
+
+.creator a {
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+.infos {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infos p {
+    margin: 0;
+    width: fit-content;
+}
+
+.interaction{
+    display: flex;
+    flex-direction: row;
+}
+
+.interactButton{
+    font-size: 1.3em;
+    margin: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+/** SIGNUP **/
+
+#signup{
+    padding: 25px;
+    margin: 5% auto 0 auto;
+    width: 50vh;
+}
+
+table{
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(220,220,220);
+    border-spacing: 15px;
+}
+
+tr{
+    text-align: left;
+}
+
+th{
+    text-align: center;
+}
+
+.redirection {
+    padding-top: 1%;
+    text-align: center;
+}
+
+#confirm{
+    text-align: center;
+}
+
+/** SIGNIN **/
+
+#signin{
+    padding: 25px;
+    margin: 5% auto 0 auto;
+    width: 50vh;
+}
+
+/** WRITE TOUITE **/
+
+#writeTouite {
+    padding: 25px;
+    margin: 0 auto 0 auto;
+    width: 35%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.textField{
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    padding: 6px;
+}
+
+.backMenu {
+    border: 1px solid rgb(220,220,220);
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0,0.1);
+}
+
+.text_area {
+    border: 1px solid rgb(220,220,220);
+    border-radius: 6px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.username, h2.tag {
+    text-align: center;
+}
+.profileName {
+    text-align: center;
+}
+
+.writeButton{
+    display: flex;
+    flex-direction: row;
+}
+
+#imageInput {
+    display: none;
+}
+
+.file-input-label {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.file-input-label:hover {
+    background-color: #2980b9;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/** DELETE CONFIRMATION **/
+
+#delConfirm{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 25%;
+    border-bottom: 1px solid rgb(220,220,220);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0,0.1);
+    background-color: white;
+    z-index: 1000;
+}
+
+.supButton {
+    color: red;
+    background-color: rgba(239, 35, 60, 0.2);
+    padding: 0.5%;
+    border: 3px solid rgba(239, 35, 60, 0.5);
+    border-radius: 12px;
+}
+
+#delButton {
+<<<<<<< HEAD
+    margin: 0 20px 0 0;
+    background-color: red;
+=======
+    background-color: red;
+}
+
+.buttonNavigation chooseFile {
+
+>>>>>>> 8b0df25fc71ac8de5652a2df5c1fd9b4bccc4d58
+}
+
+#delbuttonConfirm{
+    background-color: red;
+}
+#delButton:hover, #delbuttonConfirm:hover{
+    background-color: indianred;
+}
+
+#delButton:focus, #delbuttonConfirm:focus{
+    background-color: darkred;
+}
+#d th td{
+    text-align: center;
+}
+
+#textConfirm{
+    margin: 0 auto;
+}
+
+.buttonNavigation{
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: none;
+    background: #2667ff;
+    cursor:pointer;
+    font-size: 1em;
+    width: fit-content;
+}
+
+a{
+    text-decoration: none;
+}
+
+.buttonNavigation:hover{
+    background-color: #4ea8de;
+}
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/** STATS **/
+
+#stat{
+    width: 30%;
+    margin: 5% auto;
+    padding: 3%;
+    text-align: center;
+}
+
+.user tr, .user td {
+    text-align: center;
+}
