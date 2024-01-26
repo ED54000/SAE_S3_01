@@ -1,6 +1,2 @@
-# SAE_S3_WEB_Zott_Charpentier_Besoin_Duchene
-Membres du groupe :
-- Baptiste BESOIN : besoin5u
-- Thomas CHARPENTIER : charpe134u
-- Éloi DUCHÊNE : duchene55u
-- Alexis ZOTT : zott1u
+# SAE_S3_
+Création d'un équivalent de Tweeter lors d'une SAE en groupe de 4
