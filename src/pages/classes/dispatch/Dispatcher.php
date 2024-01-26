@@ -59,7 +59,6 @@ class Dispatcher
                 break;
             case 'signin':
                 $act = new SignIn();
-                var_dump($act);
                 $html = $act->execute();
                 break;
             case 'signup':
